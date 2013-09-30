@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  CodeKata14
+
+  Created by Zaheer Naby on 9/28/13.
+  Copyright (c) 2013 Zaheer Naby. All rights reserved.
+*/
+"ERROR_FILENAME_IS_NULL"="Error: Filename is nil.";
+"ERROR_FILE_LOAD_FAILED_FORMAT"="Error: Failed to load file %@, error message %@";
+
+
+"ERROR_NGRAM_SIZE_TOO_SHORT"="Error: ngram must have a minimum length of 2";
+
+"ERROR_SEARCH_PHRASE_TOO_SHORT"="Error:Search phrase must contain at least two words.";
+"ERROR_SEARCH_PHRASE_IS_NIL"="Error: Search phrase is nil.";
+"ERROR_SEARCH_PHRASE_WORD_COUNT_INVALID"="Error: Search phrase does not match n-gram word length";
+"ERROR_NO_MATCH_FOUND"="Error: No match found for search phrase";
+
+"ERROR_BOOK_NOT_LOADED"="Error: Book data not loaded.";
+"ERROR_GENERATING_DICTIONARY"="Error: Failed to generate ngram dictionary";
+"ALERT_ERROR_TITLE"="Error";
+"ALERT_ERROR_CANCEL_BUTTON_TITLE"="OK";
+
+"BOOK_FILE_EXTENTION"="txt";
+
