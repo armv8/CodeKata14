@@ -35,6 +35,7 @@
 - (void)tearDown
 {
     [super tearDown];
+    _ngram = nil;
 }
 
 /**
