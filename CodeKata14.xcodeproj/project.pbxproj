@@ -24,7 +24,7 @@
 		60E437EE17F60C38000198D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E437CD17F60C37000198D4 /* Foundation.framework */; };
 		60E437EF17F60C38000198D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E437D117F60C37000198D4 /* UIKit.framework */; };
 		60E437F717F60C38000198D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60E437F517F60C38000198D4 /* InfoPlist.strings */; };
-		60E437F917F60C38000198D4 /* CodeKata14Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E437F817F60C38000198D4 /* CodeKata14Tests.m */; };
+		60E437F917F60C38000198D4 /* ZXNGramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E437F817F60C38000198D4 /* ZXNGramTests.m */; };
 		60E4380417F60C5B000198D4 /* ZXNGram.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E4380317F60C5B000198D4 /* ZXNGram.m */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,7 @@
 		60E437EC17F60C38000198D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60E437F417F60C38000198D4 /* CodeKata14Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodeKata14Tests-Info.plist"; sourceTree = "<group>"; };
 		60E437F617F60C38000198D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		60E437F817F60C38000198D4 /* CodeKata14Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeKata14Tests.m; sourceTree = "<group>"; };
+		60E437F817F60C38000198D4 /* ZXNGramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXNGramTests.m; sourceTree = "<group>"; };
 		60E4380217F60C5B000198D4 /* ZXNGram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNGram.h; sourceTree = "<group>"; };
 		60E4380317F60C5B000198D4 /* ZXNGram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNGram.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,7 +204,7 @@
 		60E437F217F60C38000198D4 /* CodeKata14Tests */ = {
 			isa = PBXGroup;
 			children = (
-				60E437F817F60C38000198D4 /* CodeKata14Tests.m */,
+				60E437F817F60C38000198D4 /* ZXNGramTests.m */,
 				60E437F317F60C38000198D4 /* Supporting Files */,
 			);
 			path = CodeKata14Tests;
@@ -332,7 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E437F917F60C38000198D4 /* CodeKata14Tests.m in Sources */,
+				60E437F917F60C38000198D4 /* ZXNGramTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

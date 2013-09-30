@@ -37,6 +37,9 @@
     [super tearDown];
 }
 
+/**
+ * Test loadBookFromFile Function with a null filename.
+ */
 -(void) testFileLoadWithNilFile
 {
     
@@ -47,6 +50,9 @@
     
 }
 
+/**
+ * Test loadBookFromFile Function with an invalid filename.
+ */
 -(void)testFileLoadWithInvalidFile
 {
     NSError * error = nil;
@@ -55,6 +61,9 @@
     XCTAssertFalse(_ngram.bookLoaded, INVALID_BOOK_STATUS);
 }
 
+/**
+ * Test loadBookFromFile Function with a valid filename.
+ */
 -(void) testFileLoadWithValidFile
 {
     NSError * error = nil;
@@ -64,6 +73,9 @@
     XCTAssertTrue(_ngram.bookLoaded, INVALID_BOOK_STATUS);
 }
 
+/**
+ * Test generateRandomPhraseStartWithPhrase Function nil seed phrase.
+ */
 -(void) testPhraseGenerationWithNilSeed
 {
     NSError * loadBookError = nil;
@@ -79,6 +91,9 @@
     
 }
 
+/**
+ * Test generateRandomPhraseStartWithPhrase Function without first loading a book.
+ */
 -(void) testPhraseGenerationWithNoBookLoaded
 {
     
@@ -89,7 +104,9 @@
     XCTAssertEqual([generatedTextError code], kNGRAMErrorBookNotLoaded, INVALID_ERROR_CODE);
     
 }
-
+/**
+ * Test generateRandomPhraseStartWithPhrase Function seed phrase that does not match the ngram size.
+ */
 -(void) testPhraseGenerationWithMismatchPhraseLength
 {
     NSError * loadBookError = nil;
@@ -105,6 +122,9 @@
     XCTAssertEqual([generateTextError code], kNGRAMErrorSearchPhraseWordCountInvalid, INVALID_ERROR_CODE);
 }
 
+/**
+ * Test generateRandomPhraseStartWithPhrase Function seed phrase that does not exist in the text
+ */
 -(void) testPhraseGenerationWithNoMatchingPhrase
 {
     NSError * loadBookError = nil;
@@ -120,6 +140,9 @@
     XCTAssertEqual([generateTextError code], kNGRAMErrorNoMatchFound, INVALID_ERROR_CODE);
 }
 
+/**
+ * Test generateRandomPhraseStartWithPhrase Function a matching seed phrase
+ */
 -(void) testPhraseGenerationWithMatchingPhrase
 {
     NSError * loadBookError = nil;
@@ -135,6 +158,9 @@
     XCTAssertNil(generateTextError, INVALID_ERROR_CODE);
 }
 
+/**
+ * Test generateRandomPhraseStartWithPhrase Function with an invalid ngram size.
+ */
 -(void) testPhraseGenerationWithInvalidNgramLength
 {
     NSError * loadBookError = nil;
@@ -150,6 +176,10 @@
     XCTAssertEqual([generateTextError code], kNGRAMErrorNGramTooShort, INVALID_ERROR_CODE);
 }
 
+
+/**
+ * Test generateRandomPhraseStartWithPhrase Function with a valid ngram size.
+ */
 -(void) testPhraseGenerationWithValidNgramLength
 {
     NSError * loadBookError = nil;

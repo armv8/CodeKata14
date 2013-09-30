@@ -12,7 +12,7 @@
 
 @property (nonatomic, assign) NSUInteger ngramSize;
 @property (nonatomic, assign) NSUInteger maxOutputLength;
-@property (nonatomic, assign) BOOL bookLoaded;
+@property (readonly, nonatomic, assign) BOOL bookLoaded;
 
 -(void) loadBookFromFile:(NSString *) fileName error:(NSError **) error;
 -(NSString *) generateRandomPhraseStartWithPhrase:(NSString *) beginPhrase error:(NSError **) error;
